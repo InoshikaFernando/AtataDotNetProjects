@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28803.156
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Newstalk", "AtataClassLNet\Newstalk.csproj", "{ECF84D69-7559-4921-BAEB-90FD6C658C1D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HiddenSpyBucket", "HiddenSpyBucket\HiddenSpyBucket.csproj", "{667E22A1-25A2-4553-89D0-739BB504D805}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ECF84D69-7559-4921-BAEB-90FD6C658C1D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ECF84D69-7559-4921-BAEB-90FD6C658C1D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ECF84D69-7559-4921-BAEB-90FD6C658C1D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ECF84D69-7559-4921-BAEB-90FD6C658C1D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{667E22A1-25A2-4553-89D0-739BB504D805}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{667E22A1-25A2-4553-89D0-739BB504D805}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{667E22A1-25A2-4553-89D0-739BB504D805}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{667E22A1-25A2-4553-89D0-739BB504D805}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {338A57F4-B499-4A8E-879A-D85881BEEFE7}
+	EndGlobalSection
+EndGlobal
