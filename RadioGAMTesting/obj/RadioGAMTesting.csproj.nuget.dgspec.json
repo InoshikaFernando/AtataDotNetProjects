@@ -1,0 +1,87 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\inoshika.fernando\\source\\repos\\AtataDotNetProjects\\RadioGAMTesting\\RadioGAMTesting.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\inoshika.fernando\\source\\repos\\AtataDotNetProjects\\RadioGAMTesting\\RadioGAMTesting.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\inoshika.fernando\\source\\repos\\AtataDotNetProjects\\RadioGAMTesting\\RadioGAMTesting.csproj",
+        "projectName": "RadioGAMTesting",
+        "projectPath": "C:\\Users\\inoshika.fernando\\source\\repos\\AtataDotNetProjects\\RadioGAMTesting\\RadioGAMTesting.csproj",
+        "packagesPath": "C:\\Users\\inoshika.fernando\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\inoshika.fernando\\source\\repos\\AtataDotNetProjects\\RadioGAMTesting\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\inoshika.fernando\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.1": {
+          "dependencies": {
+            "Atata": {
+              "target": "Package",
+              "version": "[1.0.0, )"
+            },
+            "Atata.WebDriverExtras": {
+              "target": "Package",
+              "version": "[1.2.0, )"
+            },
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[16.0.1, )"
+            },
+            "Microsoft.NETCore.App": {
+              "target": "Package",
+              "version": "[2.1.0, )",
+              "autoReferenced": true
+            },
+            "NUnit": {
+              "target": "Package",
+              "version": "[3.11.0, )"
+            },
+            "NUnit3TestAdapter": {
+              "target": "Package",
+              "version": "[3.13.0, )"
+            },
+            "Selenium.WebDriver": {
+              "target": "Package",
+              "version": "[3.141.0, )"
+            },
+            "Selenium.WebDriver.ChromeDriver": {
+              "target": "Package",
+              "version": "[72.0.3626.69, )"
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    }
+  }
+}
