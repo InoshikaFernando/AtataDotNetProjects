@@ -24,10 +24,14 @@ namespace AtataClassLNet.RadioGAMTesting.Common
             base.TearDown();
         }
 
-        public void GAMCount()
+        /**
+         * Step 1: Check data-mediaquery
+         */
+        public void GAMCountCheck(String _resolution)
         {
             var CommonPage = Go.To<CommonPage>();
-           // spyPage.SpyBucketCount.Count.Should.Equal(0);
+           // CommonPage.GAMList.Count.Should.BeGreaterOrEqual(GAMExpected);
+
 
         }
     }
