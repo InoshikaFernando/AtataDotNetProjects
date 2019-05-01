@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Newstalk", "AtataClassLNet\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HiddenSpyBucket", "HiddenSpyBucket\HiddenSpyBucket.csproj", "{667E22A1-25A2-4553-89D0-739BB504D805}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RadioGAMTesting", "RadioGAMTesting\RadioGAMTesting.csproj", "{626AEBBC-49FF-43EE-973F-A5B2BAA1B750}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{667E22A1-25A2-4553-89D0-739BB504D805}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{667E22A1-25A2-4553-89D0-739BB504D805}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{667E22A1-25A2-4553-89D0-739BB504D805}.Release|Any CPU.Build.0 = Release|Any CPU
+		{626AEBBC-49FF-43EE-973F-A5B2BAA1B750}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{626AEBBC-49FF-43EE-973F-A5B2BAA1B750}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{626AEBBC-49FF-43EE-973F-A5B2BAA1B750}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{626AEBBC-49FF-43EE-973F-A5B2BAA1B750}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

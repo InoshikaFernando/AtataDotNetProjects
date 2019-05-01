@@ -51,5 +51,14 @@ namespace AtataClassLNet.NewsTalkTest
             homepage.AddNoteCount.Count.Should.Equal(3);
 
         }
+
+        /*
+        public void SpyBucketCount()
+        {
+            var spyPage = Go.To<SpyPage>();
+            spyPage.SpyBucketCount.Count.Should.Equal(0);
+
+        }
+        */
     }
 }

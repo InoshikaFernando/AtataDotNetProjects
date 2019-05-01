@@ -16,11 +16,11 @@ namespace HiddenSpyBucket.Tests
         {
             __url = url;
         }
+
         [SetUp]
         public void SetUp()
         {
             base.SetUp(__url);
-            //AtataContext.Configure().UseBaseUrl("https://staging.flava.co.nz/spy");
         }
 
         public override void TearDown()
@@ -29,10 +29,9 @@ namespace HiddenSpyBucket.Tests
         }
 
         [Test]
-        public void SpyCount()
+        public void SpyExist()
         {
-            base.AddCount();
+            base.SpyBucketExist();
         }
-
     }
 }
