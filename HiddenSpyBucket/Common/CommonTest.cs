@@ -24,12 +24,10 @@ namespace AtataClassLNet.HiddenSpyBucket.Common
             base.TearDown();
         }
 
-    //    [Test]
-        public void AddCount()
+        public void SpyBucketExist()
         {
             var spyPage = Go.To<SpyPage>();
-            spyPage.SpyBucketCount.Count.Should.Equal(0);
-
+            spyPage.SpyBucket.Should.Not.Exist();
         }
     }
 }

@@ -1,0 +1,14 @@
+C:\Users\inoshika.fernando\source\repos\AtataDotNetProjects\RadioGAMTesting\bin\Debug\netcoreapp2.1\NUnit3.TestAdapter.dll
+C:\Users\inoshika.fernando\source\repos\AtataDotNetProjects\RadioGAMTesting\bin\Debug\netcoreapp2.1\NUnit3.TestAdapter.pdb
+C:\Users\inoshika.fernando\source\repos\AtataDotNetProjects\RadioGAMTesting\bin\Debug\netcoreapp2.1\nunit.engine.netstandard.dll
+C:\Users\inoshika.fernando\source\repos\AtataDotNetProjects\RadioGAMTesting\bin\Debug\netcoreapp2.1\RadioGAMTesting.deps.json
+C:\Users\inoshika.fernando\source\repos\AtataDotNetProjects\RadioGAMTesting\bin\Debug\netcoreapp2.1\RadioGAMTesting.runtimeconfig.json
+C:\Users\inoshika.fernando\source\repos\AtataDotNetProjects\RadioGAMTesting\bin\Debug\netcoreapp2.1\RadioGAMTesting.runtimeconfig.dev.json
+C:\Users\inoshika.fernando\source\repos\AtataDotNetProjects\RadioGAMTesting\bin\Debug\netcoreapp2.1\RadioGAMTesting.dll
+C:\Users\inoshika.fernando\source\repos\AtataDotNetProjects\RadioGAMTesting\bin\Debug\netcoreapp2.1\RadioGAMTesting.pdb
+C:\Users\inoshika.fernando\source\repos\AtataDotNetProjects\RadioGAMTesting\obj\Debug\netcoreapp2.1\RadioGAMTesting.csproj.CoreCompileInputs.cache
+C:\Users\inoshika.fernando\source\repos\AtataDotNetProjects\RadioGAMTesting\obj\Debug\netcoreapp2.1\RadioGAMTesting.AssemblyInfoInputs.cache
+C:\Users\inoshika.fernando\source\repos\AtataDotNetProjects\RadioGAMTesting\obj\Debug\netcoreapp2.1\RadioGAMTesting.AssemblyInfo.cs
+C:\Users\inoshika.fernando\source\repos\AtataDotNetProjects\RadioGAMTesting\obj\Debug\netcoreapp2.1\RadioGAMTesting.dll
+C:\Users\inoshika.fernando\source\repos\AtataDotNetProjects\RadioGAMTesting\obj\Debug\netcoreapp2.1\RadioGAMTesting.pdb
+C:\Users\inoshika.fernando\source\repos\AtataDotNetProjects\RadioGAMTesting\obj\Debug\netcoreapp2.1\RadioGAMTesting.csprojAssemblyReference.cache
