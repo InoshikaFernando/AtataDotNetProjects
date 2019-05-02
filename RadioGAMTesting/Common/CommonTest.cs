@@ -12,6 +12,7 @@ namespace AtataClassLNet.RadioGAMTesting.Common
 {
     public class CommonTest : BaseClass
     {
+        int _mediaqueryCount = 0;
         
         public override void SetUp(String url, String size)
         {
@@ -26,13 +27,36 @@ namespace AtataClassLNet.RadioGAMTesting.Common
 
         /**
          * Step 1: Check data-mediaquery
+         * sum of data-mediaquery with matching size or without size
          */
-        public void GAMCountCheck(String _resolution)
+         public int MediaqueryCount (String _resolution)
+         {
+            var CommonPage = Go.To<CommonPage>();
+            if (_resolution.Equals("large-up"))
+            {
+
+                _mediaqueryCount=  CommonPage.MediaqueryLargeList.Count();
+            }
+            else
+            {
+                _mediaqueryCount = CommonPage.MediaquerySmallList.Count();
+            }
+            return _mediaqueryCount;
+         }
+
+        /**
+         * Step 2: Check dfpad count with data-mediaquery count
+         */
+        public int DfpadCountCheck(String _resolution)
         {
             var CommonPage = Go.To<CommonPage>();
-           // CommonPage.GAMList.Count.Should.BeGreaterOrEqual(GAMExpected);
+            return CommonPage.DfpadList.Count();
 
 
         }
+
+        /**
+         * Step 3: data-google-query-id
+         */
     }
 }

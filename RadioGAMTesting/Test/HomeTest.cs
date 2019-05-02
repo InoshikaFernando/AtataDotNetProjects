@@ -4,9 +4,9 @@ using System;
 
 namespace RadioGAMTesting    
 {
-    [TestFixture("https://www.newstalkzb.co.nz/", "window-size=638,1020", "small")]
-    [TestFixture("https://www.newstalkzb.co.nz/", "window-size=1025,1020", "large")]
-    [TestFixture("https://www.newstalkzb.co.nz/", "window-size=1300,1020", "Ex-large")]
+    [TestFixture("https://www.newstalkzb.co.nz/", "window-size=638,1020", "small-only")]
+    [TestFixture("https://www.newstalkzb.co.nz/", "window-size=1025,1020", "large-up")]
+    //  [TestFixture("https://www.newstalkzb.co.nz/", "window-size=1300,1020", "large-only")]
     public class HomeTest : CommonTest
     {
         private string __url;
@@ -36,9 +36,12 @@ namespace RadioGAMTesting
          * Step 2: Check dfpad
          * Step 3: data-google-query-id
          * */
-        public void TestGAMCount()
+        public void TestDfpadCount()
         {
-            base.GAMCountCheck(_resolution);
+            var MediaqueryCount = base.MediaqueryCount(_resolution);
+            var DfpadCount = base.DfpadCountCheck(_resolution);
+            Assert.AreEqual(MediaqueryCount, DfpadCount);
+            //base.GAMCountCheck(_resolution);
         }
 
     }

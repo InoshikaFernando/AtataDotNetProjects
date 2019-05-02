@@ -27,19 +27,42 @@ namespace AtataClassLNet.RadioGAMTesting.Common
         /**
          * Step 1: Check data-mediaquery
          * */
+        
+        [ControlDefinition("aside")]
+        public class MediaqueryLarge : Control<CommonPage>
+        {
+            [FindByAttribute("data-mediaquery", new string[] { "", "large-up" })]
+            public PageObject<CommonPage> MediaqueryItem { get; private set; }
+        }
+
+        [ControlDefinition("aside")]
+        public class MediaquerySmall : Control<CommonPage>
+        {
+            [FindByAttribute("data-mediaquery", new string[] { "", "small-only" })]
+            public PageObject<CommonPage> MediaqueryItem { get; private set; }
+        }
+
+        public ControlList<MediaqueryLarge, CommonPage> MediaqueryLargeList { get; private set; }
+        public ControlList<MediaquerySmall, CommonPage> MediaquerySmallList { get; private set; }
 
 
         /**
          * Check dfpad
          */
 
-        public ControlList<GAMItem, CommonPage> GAMList { get; private set; }
+        public ControlList<DfpadItem, CommonPage> DfpadList { get; private set; }
 
         [ControlDefinition("div", ContainingClass = "dfpad")]
-        public class GAMItem : Control<CommonPage>
+        public class DfpadItem : Control<CommonPage>
         {
-            public Text<CommonPage> GAM { get; private set; }
+            public Text<CommonPage> Dfpad { get; private set; }
         }
+
+        /**
+         * Check data-google-query-id
+         */
+        [FindByAttribute("data-google-query-id")]
+        public PageObject<CommonPage> GAMItem { get; private set; }
 
     }
 }
