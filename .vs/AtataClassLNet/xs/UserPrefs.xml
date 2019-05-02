@@ -7,13 +7,15 @@
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="AtataClassLNet" expanded="True">
-            <Node name="Newstalk" expanded="True" selected="True" />
+            <Node name="RadioGAMTesting" selected="True" />
           </Node>
         </State>
       </Pad>
       <Pad Id="MonoDevelop.UnitTesting.TestPad">
         <State name="__root__">
-          <Node name="AtataClassLNet" expanded="True" selected="True" />
+          <Node name="AtataClassLNet" expanded="True">
+            <Node name="RadioGAMTesting" selected="True" />
+          </Node>
         </State>
       </Pad>
     </Pads>
