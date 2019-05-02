@@ -14,9 +14,9 @@ namespace AtataClassLNet.RadioGAMTesting.Common
     {
         int _mediaqueryCount = 0;
         
-        public override void SetUp(String url, String size)
+        public override void Init(String url, String size)
         {
-            base.SetUp(url, size);
+            base.Init(url, size);
         }
 
 
@@ -58,5 +58,12 @@ namespace AtataClassLNet.RadioGAMTesting.Common
         /**
          * Step 3: data-google-query-id
          */
+         public int DGQCountCheck()
+        {
+            var CommonPage = Go.To<CommonPage>();
+            return CommonPage.DGQItemList.Count();
+
+            Go.ToUrl("");
+        }
     }
 }

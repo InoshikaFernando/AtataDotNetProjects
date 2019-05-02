@@ -12,7 +12,7 @@ namespace AtataClassLNet.RadioGAMTesting.Common
     public class BaseClass
     {
         
-        public virtual void SetUp(String url, String size)
+        public virtual void Init(String url, String size)
         {
             AtataContext.Configure().
                 UseChrome().
@@ -30,7 +30,8 @@ namespace AtataClassLNet.RadioGAMTesting.Common
                 Build();
         }
 
-        [TearDown]
+        //[TearDown]
+        [OneTimeTearDown]
         public virtual void TearDown()
         {
             AtataContext.Current?.CleanUp();

@@ -61,8 +61,14 @@ namespace AtataClassLNet.RadioGAMTesting.Common
         /**
          * Check data-google-query-id
          */
-        [FindByAttribute("data-google-query-id")]
-        public PageObject<CommonPage> GAMItem { get; private set; }
+        [ControlDefinition("aside")]
+        public class DGQ:Control<CommonPage>
+        {
+            [FindByAttribute("data-google-query-id")]
+            public PageObject<CommonPage> DGQItem { get; private set; }
+        }
+
+        public ControlList<DGQ, CommonPage> DGQItemList { get; private set; }
 
     }
 }
