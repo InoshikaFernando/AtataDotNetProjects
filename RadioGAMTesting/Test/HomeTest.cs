@@ -1,4 +1,5 @@
-﻿using AtataClassLNet.RadioGAMTesting.Common;
+﻿using Atata;
+using AtataClassLNet.RadioGAMTesting.Common;
 using NUnit.Framework;
 using System;
 
@@ -19,11 +20,19 @@ namespace RadioGAMTesting
             _resolution = resolution;
         }
 
-        [SetUp]
-        public void SetUp()
+        //[SetUp]
+        [OneTimeSetUp]
+        public void Init()
         {
-            base.SetUp(__url, _size);
+            base.Init(__url, _size);
         }
+
+        //[TestCase("https://www.hauraki.co.nz")]
+        //public void Setup(string url)
+        //{
+        //    //Get url
+        //    Go.ToUrl("https://www.hauraki.co.nz");
+        //}
 
         public override void TearDown()
         {
@@ -38,10 +47,21 @@ namespace RadioGAMTesting
          * */
         public void TestDfpadCount()
         {
+           
             var MediaqueryCount = base.MediaqueryCount(_resolution);
             var DfpadCount = base.DfpadCountCheck(_resolution);
             Assert.AreEqual(MediaqueryCount, DfpadCount);
             //base.GAMCountCheck(_resolution);
+        }
+
+        [Test]
+        public void TestDataGoogleQueryCount()
+        {
+            Go.ToUrl("https://www.hauraki.co.nz");
+            var DfpadCount = base.DfpadCountCheck(_resolution);
+            var DGQadCount = base.DGQCountCheck();
+            Assert.AreEqual(DGQadCount, DfpadCount);
+
         }
 
     }
