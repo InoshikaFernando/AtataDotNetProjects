@@ -1,6 +1,7 @@
 ﻿using Atata;
 using AtataClassLNet.RadioGAMTesting.Common;
 using NUnit.Framework;
+using RadioGAMTesting.CSVConfiguration;
 using System;
 
 namespace RadioGAMTesting    
@@ -23,16 +24,26 @@ namespace RadioGAMTesting
         {
             base.Init(_size);
         }
-
-        [TestCase("https://www.hauraki.co.nz")]
+        /**
+        [TestCase("http://staging.hokonui.co.nz/")]
+        [TestCase("http://staging.hokonui.co.nz/shows/")]
+        [TestCase("http://staging.hokonui.co.nz/shows/breakfast-southland-with-luke-howden/")]
+        [TestCase("http://staging.hokonui.co.nz/win/")]
+        [TestCase("http://staging.hokonui.co.nz/win/subway-shout-southland/")]
         [TestCase("https://www.newstalkzb.co.nz/")]
-        public void TestAddCount(string url)
+    */
+        public static TestCaseData[] AdditionModels =>
+            CsvSource.Get<AdditionModel>("urlList.csv");
+
+        [TestCaseSource(nameof(AdditionModels))]
+        public void TestAddCount(AdditionModel model)
         {
-            Go.ToUrl(url);
+            Go.ToUrl(model.url);
             TestDfpadCount();
             TestDataGoogleQueryCount();
         }
 
+        [OneTimeTearDown]
         public override void TearDown()
         {
             base.TearDown();
@@ -54,5 +65,10 @@ namespace RadioGAMTesting
             Assert.AreEqual(DGQadCount, DfpadCount);
         }
 
+    }
+
+    public class AdditionModel
+    {
+        public string url { get; set; }
     }
 }

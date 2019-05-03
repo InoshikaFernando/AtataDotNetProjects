@@ -18,10 +18,7 @@ namespace AtataClassLNet.RadioGAMTesting.Common
                 UseChrome().
                 WithFixOfCommandExecutionDelay().
                 WithLocalDriverPath().
-                //WithArguments("start-maximized").
-                //WithArguments("window-size=640,480").
                 WithArguments(size).
-                //UseBaseUrl("https://www.newstalkzb.co.nz").
                 UseNUnitTestName().
                 AddNUnitTestContextLogging().
                 AddScreenshotFileSaving().
@@ -31,7 +28,7 @@ namespace AtataClassLNet.RadioGAMTesting.Common
         }
 
         //[TearDown]
-        [OneTimeTearDown]
+        
         public virtual void TearDown()
         {
             AtataContext.Current?.CleanUp();
