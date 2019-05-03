@@ -14,9 +14,9 @@ namespace AtataClassLNet.RadioGAMTesting.Common
     {
         int _mediaqueryCount = 0;
         
-        public override void Init(String url, String size)
+        public override void Init(String size)
         {
-            base.Init(url, size);
+            base.Init(size);
         }
 
 

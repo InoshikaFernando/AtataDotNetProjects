@@ -12,7 +12,7 @@ namespace AtataClassLNet.RadioGAMTesting.Common
     public class BaseClass
     {
         
-        public virtual void Init(String url, String size)
+        public virtual void Init(String size)
         {
             AtataContext.Configure().
                 UseChrome().
@@ -21,7 +21,7 @@ namespace AtataClassLNet.RadioGAMTesting.Common
                 //WithArguments("start-maximized").
                 //WithArguments("window-size=640,480").
                 WithArguments(size).
-                UseBaseUrl(url).
+                //UseBaseUrl("https://www.newstalkzb.co.nz").
                 UseNUnitTestName().
                 AddNUnitTestContextLogging().
                 AddScreenshotFileSaving().
