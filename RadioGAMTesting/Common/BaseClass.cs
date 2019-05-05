@@ -12,16 +12,13 @@ namespace AtataClassLNet.RadioGAMTesting.Common
     public class BaseClass
     {
         
-        public virtual void Init(String url, String size)
+        public virtual void Init(String size)
         {
             AtataContext.Configure().
                 UseChrome().
                 WithFixOfCommandExecutionDelay().
                 WithLocalDriverPath().
-                //WithArguments("start-maximized").
-                //WithArguments("window-size=640,480").
                 WithArguments(size).
-                UseBaseUrl(url).
                 UseNUnitTestName().
                 AddNUnitTestContextLogging().
                 AddScreenshotFileSaving().
@@ -31,7 +28,7 @@ namespace AtataClassLNet.RadioGAMTesting.Common
         }
 
         //[TearDown]
-        [OneTimeTearDown]
+        
         public virtual void TearDown()
         {
             AtataContext.Current?.CleanUp();
