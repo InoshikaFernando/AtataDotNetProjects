@@ -8,8 +8,6 @@ using System.Linq;
 
 namespace RadioGAMTestingSelenium
 {
-    //[TestFixture("window-size=638,1020", "small-only")]
-    //[TestFixture("window-size=1025,1020", "large-up")]
     [TestFixture(638,1020, "small-only")]
     [TestFixture(1025,1020, "large-up")]
     class Program : CommonTest
@@ -41,7 +39,7 @@ namespace RadioGAMTestingSelenium
             TestDataGoogleQueryCount();
         }
 
-        [TearDown]
+        [OneTimeTearDown]
         public void closeBrowser()
         {
             driver.Close();
@@ -76,34 +74,19 @@ namespace RadioGAMTestingSelenium
     {
         int _mediaqueryCount = 0;
 
-        //public override void Init(String size)
-        //{
-        //    base.Init(size);
-        //}
-
-
-        //public override void TearDown()
-        //{
-        //    base.TearDown();
-        //}
-
         /**
          * Step 1: Check data-mediaquery
          * sum of data-mediaquery with matching size or without size
          */
         public int Mediaquery(String _resolution, IWebDriver driver)
         {
-            //var CommonPage = Go.To<CommonPage>();
             if (_resolution.Equals("large-up"))
             {
                 _mediaqueryCount = driver.FindElements(By.XPath("//*[@data-mediaquery='large-up']")).Count();
-                //_mediaqueryCount = CommonPage.MediaqueryLargeList.Count();
             }
             else
             {
                 _mediaqueryCount = driver.FindElements(By.XPath("//*[@data-mediaquery='small-only']")).Count();
-
-                //_mediaqueryCount = CommonPage.MediaquerySmallList.Count();
             }
             _mediaqueryCount += driver.FindElements(By.XPath("//*[@data-mediaquery='']")).Count();
             return _mediaqueryCount;
@@ -114,8 +97,6 @@ namespace RadioGAMTestingSelenium
          */
         public int DfpadCountCheck(String _resolution, IWebDriver driver)
         {
-            //var CommonPage = Go.To<CommonPage>();
-            //return CommonPage.DfpadList.Count();
             return driver.FindElements(By.ClassName("dfpad")).Count();
         }
 
@@ -124,9 +105,7 @@ namespace RadioGAMTestingSelenium
          */
         public int DGQCountCheck(IWebDriver driver)
         {
-            //var CommonPage = Go.To<CommonPage>();
-            //return CommonPage.DGQItemList.Count();
-            return driver.FindElements(By.XPath("./*[@Select]")).Count();
+            return driver.FindElements(By.XPath("//*[@data-google-query-id]")).Count();
         }
     }
 }
